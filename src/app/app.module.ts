@@ -5,11 +5,11 @@ import { AuthFormModule } from './auth-form/auth-form.module';
 
 import { AppComponent } from './app.component';
 import { CreditCardDirective } from './credit-card/credit-card.directive';
-import { FilesizePipe } from './filesize.pipe';
+import { StockInventoryModule } from './stock-inventory/stock-inventory.module';
 
 @NgModule({
-  declarations: [AppComponent, CreditCardDirective, FilesizePipe],
-  imports: [BrowserModule, AuthFormModule],
+  declarations: [AppComponent, CreditCardDirective],
+  imports: [BrowserModule, AuthFormModule, StockInventoryModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
